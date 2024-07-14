@@ -1,14 +1,11 @@
 import { Grid, TodoListItem } from '..';
 
-export const TodoList = ({todos}) => {
+export const TodoList = ({ todos }) => {
   return (
-    <>
-      <Grid>
-        {todos.map(({text, id}, index) => (
-          <TodoListItem key={id} text={text} index={index}/>
-        ))}
-      </Grid>
-      ;
-    </>
+    <Grid>
+      {todos.map(({ text, id }, index) => (
+        <TodoListItem key={id} text={text} index={index} />
+      ))}
+    </Grid>
   );
 };

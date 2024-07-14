@@ -9,7 +9,6 @@ export const Form = ({ onSubmit }) => {
     onSubmit(value);
     e.target.reset();
   };
-
   return (
     <form onSubmit={handleSubmit} className={style.form}>
       <button className={style.button} type="submit">

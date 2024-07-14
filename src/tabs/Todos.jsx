@@ -9,13 +9,13 @@ export const Todos = () => {
     setTodos(prevTodos => [...prevTodos, { text: data, id: nanoid() }]);
   };
 
-console.log(todos);
+  console.log(todos);
 
   return (
     <>
       <Form onSubmit={onSubmit} />
-      <Text textAlign="center">There are no any todos ...</Text>;
-      <TodoList todos={todos}/>
+      <Text textAlign="center">There are no any todos ...</Text>
+      <TodoList todos={todos} />
     </>
   );
 };
