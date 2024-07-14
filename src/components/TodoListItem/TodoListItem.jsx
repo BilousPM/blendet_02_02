@@ -10,7 +10,11 @@ export const TodoListItem = ({ text, index, deleteTodos, id }) => {
           TODO #{index + 1}
         </Text>
         <Text>{text}</Text>
-        <button onClick={() => deleteTodos(id)}className={style.deleteButton} type="button">
+        <button
+          onClick={() => deleteTodos(id)}
+          className={style.deleteButton}
+          type="button"
+        >
           <RiDeleteBinLine size={24} />
         </button>
       </div>
